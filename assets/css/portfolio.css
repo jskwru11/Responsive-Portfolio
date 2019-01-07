@@ -1,0 +1,276 @@
+html, body, div, nav, ul, li {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../img/concrete-texture.png");
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 3px solid #ddd;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+.centered {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: inline-block;
+    padding: 20px;
+    background-color: #4aaaaf;
+    color: #fff;
+    font-size: 2em;
+}
+.nav {
+    margin: 0;
+    padding: 20px 0 20px 20px;
+    float: right;
+}
+
+
+ul li {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+li {
+    border-right: 1px solid #ddd;
+    padding: 0 5px;
+
+}
+
+li:last-child {
+    border-right: none;
+}
+
+h1 {
+    font-size: 2em;
+    color: #4aaaaf;
+    display: inline-block;
+}
+
+.container-content {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+hr {
+    background-color: #ddd;
+    height: 2px;
+    border: none;
+}
+
+.img-wrapper {
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+}
+
+
+.image1 {
+    width: 300px;
+    background-image: url("../img/ab760773c4505443f431a81124a05a6e.png");
+    /* background-repeat: no-repeat;
+    background-size: 2%; */
+    height: 300px;
+    background-color: #ee0000;
+    margin: 20px 20px 20px 0;
+    /* position: relative; */
+    display: inline-block;
+}
+
+
+.bar {
+    position: absolute;
+    width: 300px;
+    /* height: 100px; */
+    background-color: #4aaaaf;
+    color: white;
+    left: 20px;
+    bottom: 80px;
+    right: 0;
+    text-align: center;
+    padding: 20px;
+    font-size: 2em;
+}
+
+img {
+    padding: 30px;
+}
+
+
+
+
+footer {
+    background-color: #666;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    border-top: 8px solid #4aaaaf;
+    font-size: 9px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+/* Media Queries */
+
+/* Media query for desktop */
+
+@media screen and (max-width:980px) {
+    header {
+        width: 100%;
+    }
+    
+    .container {
+        width: 90%;
+    }
+    
+    .container-content {
+        width: 60%;
+        margin-left: 40px;
+    }
+    
+    
+    footer {
+        position: static;
+        margin-top: 100px;
+    
+    }
+}
+
+
+/* Media query for tablets */
+
+@media screen and (max-width:768px) {
+    header {
+        width: 100%;
+    }
+    
+    #container {
+        width: 90%;
+
+    }
+    
+    /* .container-content {
+        width: 90%;
+    } */
+
+    #overallWrapper {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 40px;
+        display: inline-block;
+    }
+    
+    .img-wrapper {
+        width: 80%;
+        position: relative;
+        border: 3px solid gold;
+    }
+    
+    #img1, #img2, #img3, #img4, #img5 {
+        position: relative;
+        margin: 0 auto;
+        width: 50%;
+    }
+    
+    .bar {
+        width: 100%;
+        position: absolute;
+        right: 0;
+        left: 0;
+    }
+    
+    
+    footer {
+        position: static;
+        margin-top: 100px;
+    }
+
+}
+
+/* Media query for phones */
+
+@media screen and (max-width:640px) {
+
+
+header {
+    width: 100%;
+    overflow: auto;
+}
+
+#container {
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+.logo {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.nav {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+
+#overallWrapper {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.img-wrapper {
+    width: 95%;
+    position: relative;
+    
+}
+
+#img1, #img2, #img3, #img4, #img5 {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.bar {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+footer {
+    position: static;
+    width: 100%;
+    margin-top: 60px;
+}
+
+}
+

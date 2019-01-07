@@ -1,0 +1,221 @@
+html, body, div, nav, ul, li {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../img/concrete-texture.png");
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border-bottom: 3px solid #ddd;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+.centered {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: inline-block;
+    padding: 20px;
+    background-color: #4aaaaf;
+    color: #fff;
+    font-size: 2em;
+}
+
+.nav {
+    margin: 0;
+    float: right;
+    padding: 20px 0 20px 20px;
+}
+
+
+
+ul li {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+li {
+    border-right: 1px solid #ddd;
+
+}
+
+li:last-child {
+    border-right: none;
+}
+
+h1 {
+    font-size: 2em;
+    color: #4aaaaf;
+    display: inline-block;
+}
+
+.container-content {
+    margin-top: 30px;
+    padding: 0 20px 20px 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+hr {
+    background-color: #ddd;
+    height: 2px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+
+.long-input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+}
+
+
+
+.submit {
+    color: #fff;
+    width: 100px;
+    background-color: #4aaaaf;
+    border-radius: 5%;
+}
+
+
+footer {
+    background-color: #666;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    border-top: 8px solid #4aaaaf;
+    font-size: 9px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    
+}
+
+/* Media Queries */
+
+/* Media query for desktop */
+
+@media screen and (max-width:980px) {
+    header {
+        width: 100%;
+    }
+    
+    #container {
+        width: 90%;
+    }
+    
+    .container-content {
+        width: 60%;
+        margin-left: 40px;
+    }
+    
+    p {
+        font-family: 'Times New Roman';
+    }
+    
+    
+    footer {
+        position: static;
+        margin-top: 100px;
+    
+    }
+}
+
+
+/* Media query for tablets */
+
+@media screen and (max-width:768px) {
+    header {
+        width: 100%;
+    }
+    
+    #container {
+        width: 90%;
+
+    }
+    
+    .container-content {
+        width: 90%;
+    }
+    
+    footer {
+        position: static;
+        margin-top: 100px;
+    }
+    
+    p {
+        font-family: 'Times New Roman';
+    }
+}
+
+/* Media query for phones */
+
+@media screen and (max-width:640px) {
+
+
+header {
+    width: 100%;
+    overflow: auto;
+}
+
+#container {
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+.logo {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.nav {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+
+.container-content {
+    width: 85%;
+}
+
+img {
+    width: 100%;
+}
+
+footer {
+    position: static;
+    width: 100%;
+    margin-top: 60px;
+}
+
+p {
+    font-family: 'Times New Roman';
+}
+}
+
+
